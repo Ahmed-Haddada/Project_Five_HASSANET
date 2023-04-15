@@ -1,0 +1,284 @@
+.blog .blog_container {
+  background-color: var(--Black-Color);
+}
+.blog .blog_container .news {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.blog .blog_container .news .posting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #ffffff0f;
+  width: 70%;
+  background: #202120;
+  padding: 20px;
+}
+@media (min-width: 200px) and (max-width: 768px) {
+  .blog .blog_container .news .posting {
+    width: 100%;
+  }
+}
+.blog .blog_container .news .img {
+  max-width: 500px;
+  border-radius: 10px;
+  width: 100%;
+}
+.blog .blog_container .news .img #img_post {
+  width: 100%;
+  height: 400px;
+  background: round no-repeat;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .blog .blog_container .news .img {
+    max-width: 250px;
+  }
+  .blog .blog_container .news .img #img_post {
+    height: 210px;
+  }
+}
+
+.blog .blog_container .news .upload .upload_info {
+  max-width: 500px;
+  color: var(--gray-opacity-Dow);
+  padding: 10px;
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  gap: 30px;
+}
+.blog .blog_container .news .upload .upload_info .up_pers img {
+  border-radius: 50%;
+  width: 40px;
+}
+.blog .blog_container .news .upload .upload_info .up_pers #username {
+  transition: var(--Main-transition);
+}
+.blog .blog_container .news .upload .upload_info .up_pers #username:hover {
+  color: var(--Second-Mian-color);
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .blog .blog_container .news .upload .upload_info {
+    font-size: 10px;
+    gap: 15px;
+  }
+  .blog .blog_container .news .upload .upload_info .up_pers img {
+    width: 30px;
+  }
+}
+.blog .blog_container .side_bar {
+  background-color: #eee;
+  width: 25%;
+  height: 800px;
+  position: relative;
+}
+@media (min-width: 200px) and (max-width: 768px) {
+  .blog .blog_container .side_bar {
+    display: none;
+  }
+}
+
+.blog .blog_container .news .upload .upload_info .settings .dots {
+  height: 20px;
+  width: 20px;
+  padding: 15px;
+  border-radius: 50%;
+  transition: var(--Main-transition);
+}
+.blog .blog_container .news .upload .upload_info .settings .dots:hover {
+  background-color: var(--Main-BackColor);
+}
+.blog
+  .blog_container
+  .news
+  .upload
+  .upload_info
+  .settings
+  .settings_list.active {
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 1;
+}
+.blog
+  .blog_container
+  .news
+  .upload
+  .upload_info
+  .settings
+  .settings_list::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: solid 13px;
+  border-color: transparent transparent var(--background-trans-black)
+    transparent;
+}
+.blog .blog_container .news .upload .upload_info .settings .settings_list > li {
+  padding: 15px;
+  cursor: pointer;
+  transition: var(--Main-transition);
+}
+.blog
+  .blog_container
+  .news
+  .upload
+  .upload_info
+  .settings
+  .settings_list
+  > li:not(li:last-child) {
+  border-bottom: solid 1px var(--white-color);
+}
+.blog
+  .blog_container
+  .news
+  .upload
+  .upload_info
+  .settings
+  .settings_list
+  > li:hover {
+  background-color: #11121e96 !important;
+}
+.blog .blog_container .news .upload .upload_text .heading {
+  color: var(--gray-opacity-Dow);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.blog .blog_container .news .upload .upload_text .post {
+  color: var(--HeadColor);
+  line-height: 1.8;
+}
+
+.blog .blog_container .news .posting .modefier_container .btn_close:hover {
+  color: red !important;
+}
+.blog .blog_container .news .posting .modefier_container .submit_change:hover {
+  background-color: #7207b085 !important;
+}
+
+.blog .blog_container .news .interaction_community .container {
+  display: flex;
+  gap: 3rem;
+  font-size: 20px;
+  color: var(--section-color);
+}
+@media (min-width: 200px) and (max-width: 768px) {
+  .settings_list {
+    width: fit-content !important;
+  }
+}
+@media (min-width: 200px) and (max-width: 768px) {
+  .blog .blog_container .news .interaction_community .container {
+    gap: 1rem;
+    font-size: 15px;
+  }
+}
+.blog
+  .blog_container
+  .news
+  .interaction_community
+  .container
+  div:not(.social_container) {
+  position: relative;
+  padding: 8px 20px;
+  background: var(--trasparent-Color);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.blog .blog_container .news .interaction_community div i {
+  transition: var(--Main-transition);
+}
+.blog .blog_container .news .interaction_community .container .like:hover i,
+.blog .blog_container .news .interaction_community .container .comment:hover i,
+.blog
+  .blog_container
+  .news
+  .interaction_community
+  .container
+  .shares:hover
+  i:not(i:last-child) {
+  color: var(--white-color);
+  transform: rotate3d(-1, 10, 1, 45deg);
+}
+.blog .blog_container .news .interaction_community .container .like i.like {
+  color: red;
+  font-weight: 700;
+}
+
+.blog .blog_container .news .interaction_community .comments_text {
+  width: 100%;
+  margin: 20px 0;
+  display: none;
+  transition: var(--Main-transition);
+  opacity: 0;
+}
+.blog .blog_container .news .interaction_community .comments_text.active {
+  display: flex;
+  opacity: 1;
+}
+.blog .blog_container .news .interaction_community .comments_text input {
+  width: 100%;
+  outline: none;
+  position: relative;
+  padding: 15px;
+  padding-right: 50px;
+  border-radius: 15px;
+  background: inherit;
+  color: var(--white-color);
+  border: none;
+  box-shadow: #8c82823d 0 0 15px 1px;
+}
+.blog .blog_container .news .interaction_community .comments_text .send {
+  padding-bottom: 20px;
+  width: 70%;
+}
+.blog .blog_container .news .interaction_community .comments_text .send img {
+  position: absolute;
+  right: 20px;
+}
+.blog .blog_container .news .interaction_community .comments_text .all_comment {
+  max-width: 500px;
+}
+.fa-trash:hover {
+  color: #b09a9ab0;
+}
+
+.blog
+  .blog_container
+  .news
+  .interaction_community
+  .container
+  .shares
+  .social_container.active {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.social_container.active .twitter i:hover,
+.social_container.active .facebook i:hover {
+  color: blueviolet !important;
+}
+
+.social_container.active .whatsapp i:hover {
+  color: green !important;
+}
+.social_container::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 35px;
+  border: 10px solid;
+  border-color: var(--HeadColor) transparent transparent transparent;
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+  .social_container {
+    left: -120px !important;
+  }
+  .social_container::before {
+    left: 140px;
+    top: 30px;  }
+}

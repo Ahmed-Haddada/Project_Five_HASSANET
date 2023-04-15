@@ -1,0 +1,156 @@
+.login {
+  justify-content: right;
+}
+
+.login .welcome_container {
+  background-color: var(--white-color);
+  height: 100vh;
+  width: 50%;
+  border-right: dashed 2px black;
+  padding: 30px;
+}
+.login .welcome_container h1 {
+  position: absolute;
+  top: 120px;
+  width: 350px;
+  letter-spacing: 5px;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.login .welcome_container p {
+  font-family: "Shantell Sans", cursive;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+.login .welcome_container #sign {
+  position: absolute;
+  width: 200px;
+  top: 450px;
+  right: 40px;
+}
+
+.login_container {
+  max-height: 100vh;
+  background: var(--white-color);
+  width: 50%;
+  height: 100vh;
+}
+
+.login_container .box_login #heading {
+  position: absolute;
+  top: 120px;
+  letter-spacing: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+#email,
+#password {
+  outline: none;
+  padding: 8px;
+  width: 250px;
+  height: 50px;
+  border: solid 1px var(--trasparent-Color);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  box-shadow: 0 0 20px 20px white inset;
+}
+#label_e,
+#label_p {
+  position: relative;
+  top: 39px;
+  left: 8px;
+  width: fit-content;
+  padding: 5px;
+  letter-spacing: 1px;
+  font-size: 11px;
+  color: var(--background-trans-black);
+  transition: var(--Main-transition);
+}
+
+#label_check {
+  width: fit-content;
+  margin: 20px 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+#label_check > #registre {
+  cursor: pointer;
+}
+.create_account {
+  text-align: center;
+  font-weight: 100;
+  color: var(--background-trans-black);
+  font-size: 13px;
+  transition: var(--Main-transition);
+}
+.create_account:hover {
+  color: var(--blueSiel-Color);
+}
+
+#submit {
+  font-size: 15px;
+  text-transform: capitalize;
+  width: fit-content;
+  align-self: center;
+  padding: 15px;
+  background: black;
+  color: var(--white-color);
+  border: none;
+  border-radius: 30px;
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+form .All_Error .InvalidInfo.active,
+form .All_Error .EmptyInfo.active {
+  display: block !important;
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+  .login {
+    flex-direction: column;
+  }
+  .login .welcome_container {
+    width: 100%;
+    border-right: none !important;
+    border-bottom: dashed 2px black;
+    height: 50vh !important;
+  }
+  .login .welcome_container p {
+    font-size: 15px !important;
+    margin-top: 70px !important;
+  }
+  .login .welcome_container #sign {
+    width: 150px !important;
+    top: 250px !important;
+  }
+  .login .welcome_container h1 {
+    top: 30px !important;
+    font-size: 25px !important;
+  }
+}
+@media (min-width: 200px) and (max-width: 768px) {
+  .login_container .box_login #heading {
+    top: 30px !important;
+    font-size: 35px !important;
+  }
+  .login_container {
+    width: 100%;
+    height: 70vh !important;
+  }
+  .login_container .box_login form{
+    justify-content: flex-end;
+  }
+}

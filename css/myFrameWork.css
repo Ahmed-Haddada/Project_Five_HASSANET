@@ -1,0 +1,133 @@
+/* position */
+.disp-f {
+  display: flex;
+}
+.disp-direct-colum {
+  flex-direction: column;
+}
+.disp-jus-cen {
+  justify-content: center;
+}
+.disp-jus-bet {
+  justify-content: space-between;
+}
+.disp-jus-ar {
+  justify-content: space-around;
+}
+.disp-jus-ev {
+  justify-content: space-evenly !important;
+}
+.disp-align-cen {
+  align-items: center;
+}
+.disp-jus-start {
+  justify-content: flex-start;
+}
+.disp-jus-end {
+  justify-content: flex-end;
+}
+.All-center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disp-grid {
+  display: grid;
+}
+.disp-grid-columns {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.text-cen {
+  text-align: center;
+}
+.disp-non {
+  display: none;
+}
+
+.pos-fix {
+  position: fixed;
+}
+.pos-relat {
+  position: relative;
+}
+.pos-abs {
+  position: absolute;
+}
+
+.width-100por {
+  width: 100%;
+}
+.min-width100por {
+  min-width: 100%;
+}
+.width-200 {
+  width: 200px;
+}
+.width-fitcon {
+  width: fit-content;
+}
+
+.height-100por {
+  height: 100%;
+}
+.height-200 {
+  height: 200px;
+}
+
+.height-fitcon {
+  height: fit-content;
+}
+
+.bord-rad50 {
+  border-radius: 50%;
+}
+.bord-rad20 {
+  border-radius: 20px;
+}
+
+.cursor-point {
+  cursor: pointer;
+}
+
+.over-hidden {
+  overflow: hidden;
+}
+
+.padd-15 {
+  padding: 15px;
+}
+
+.z-index5 {
+  z-index: 5;
+}
+
+.text-cen {
+  text-align: center;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+.gap-20 {
+  gap: 20px;
+}
+
+.marg-l {
+  margin-left: 10px;
+}
+.marg-0 {
+  margin: 0px;
+}
+.marg-cent{
+  margin:  0 auto;
+}
+
+.letter-sp {
+  letter-spacing: 2px;
+}
+
+.line-height_26 {
+  line-height: 2.6;
+}

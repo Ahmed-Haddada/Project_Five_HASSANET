@@ -1,0 +1,188 @@
+.signUp {
+  height: 100vh;
+  background-color: var(--white-color);
+}
+
+.signUp_container {
+  background-color: #e4e4e46e;
+  height: 80%;
+  min-width: 40%;
+  padding: 30px;
+  max-width: 450px;
+}
+
+@media (max-width: 768px) {
+  .signUp_container {
+    min-width: 100%;
+  }
+}
+
+.signUp_container .pos_signUp {
+  width: 100%;
+  height: 20%;
+}
+
+.signUp_container .pos_signUp span {
+  background-color: var(--background-trans-black);
+  width: 60px;
+  height: 15px;
+  transform: skewX(30deg);
+}
+
+.signUp_container .pos_signUp span.active {
+  background-color: var(--trasparent-Color);
+}
+
+.signUp_container .signUp_section {
+  width: 100%;
+  height: 80%;
+  min-width: 400px;
+}
+.signUp_container .signUp_section div.active {
+  transform: translateX(0) !important;
+}
+
+.signUp_container .signUp_section .signUp_name,
+.signUp_container .signUp_section .signUp_email,
+.signUp_container .signUp_section .signUp_phone {
+  transition: var(--Main-transition);
+}
+
+.signUp_container .signUp_section .signUp_email,
+.signUp_container .signUp_section .signUp_phone {
+  transform: translateX(400px);
+} 
+
+#label_n,
+#label_email,
+#label_password,
+#label_phone,
+#label_current_password {
+  letter-spacing: 2px;
+  margin: 12px 0;
+}
+
+form #f_name,
+form #l_name,
+form #email,
+form #password,
+form #search,
+form #phone,
+form #current_password {
+  outline: none;
+  border: none;
+  padding: 8px;
+  width: 250px;
+  height: 40px;
+  box-shadow: var(--backHead-Color) 0 0 10px 0px;
+  transition: var(--Main-transition);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  box-shadow: 0 0 20px 20px white inset !important;
+}
+
+.signUp_section #previous,
+.signUp_section #next,
+.signUp_section #done {
+  padding: 7px 20px;
+  background: var(--Main-BackColor);
+  color: var(--white-color);
+  border: none;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.signUp_section #next {
+  align-self: self-end;
+}
+
+#MyCountry {
+  width: 20px;
+  position: relative;
+  height: 15px;
+  top: calc(40px - 30px / 2);
+  left: 4px;
+}
+
+#MyCountry img {
+  width: inherit;
+  height: inherit;
+  border-radius: 3px;
+}
+.country_list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.country_list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+.country_list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+.country_list li {
+  padding: 10px;
+  cursor: pointer;
+  transition: var(--Main-transition);
+}
+
+.country_list li:hover {
+  background-color: var(--section-color);
+}
+
+.country_list li img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+form .password i {
+  position: absolute;
+  right: 13px;
+  top: calc((40px - 16px) / 2);
+  transition: var(--Main-transition);
+  opacity: 0;
+  cursor: pointer;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+.country_list {
+  max-height: 130px;
+  overflow-y: scroll;
+  background: white;
+  box-shadow: #13b7e26b 0px 2px 4px 2px;
+  max-width: 250px;
+  position: relative;
+  top: 7px;
+  display: none;
+  transition: var(--Main-transition);
+}
+
+.signUp_section .signUp_name form .check_box {
+  margin: 10px 0px;
+}
+
+.signUp_section form .signUp_social {
+  margin-top: 20px;
+}
+
+.signUp_section form .have_account {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 100;
+  color: var(--background-trans-black);
+  font-size: 13px;
+  transition: var(--Main-transition);
+}
+
+.signUp_section form .have_account:hover {
+  color: var(--blueSiel-Color);
+}

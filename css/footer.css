@@ -1,0 +1,94 @@
+footer {
+  background-color: var(--background-trans-black);
+}
+footer .container {
+  height: fit-content;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  footer .container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer .container .logo_text .social {
+    left: 0 !important;
+  }
+}
+footer .container .logo_text h1 {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #5d93d1, #2891e1a6);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+footer .container .logo_text p,
+footer .container .contact p {
+  color: var(--white-color);
+  font-size: 16px;
+  width: 300px;
+  line-height: 2;
+}
+footer .container .logo_text .social {
+  left: -40px;
+}
+
+footer .container .logo_text .social i {
+  position: relative;
+  font-size: 25px;
+  overflow: hidden;
+  background: var(--Second-Mian-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+footer .container .logo_text .social i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -30px;
+  width: 10px;
+  height: 80px;
+  transform: rotate(45deg) translateX(-100px);
+  box-shadow: 20px 0px 50px 0px var(--white-color);
+  background-color: #c1c1c121;
+  animation: gradient 1.5s linear forwards infinite;
+}
+
+@keyframes gradient {
+  100% {
+    transform: rotate(45deg) translateX(150px);
+  }
+}
+
+footer .container .logo_text .social i:hover {
+  background-origin: content-box;
+}
+
+footer .container .Useful_Links h1,
+footer .container .contact h1 {
+  color: var(--Second-Mian-color);
+  letter-spacing: 2px;
+}
+footer .container .Useful_Links ul li {
+  margin-bottom: 10px;
+}
+
+footer .container .Useful_Links ul li a {
+  color: var(--white-color);
+  transition: var(--Main-transition);
+  letter-spacing: 1.8px;
+}
+footer .container .Useful_Links ul li a:hover {
+  color: var(--Second-Mian-color);
+}
+footer .container .contact ul li {
+  color: var(--white-color);
+  margin-bottom: 15px;
+}
+footer .container .contact ul li i {
+  color: var(--white-color);
+  margin-right: 5px;
+  font-size: 20px;
+}

@@ -1,0 +1,98 @@
+.inscri_volunteer .volunteer_container {
+  background-color: #eee;
+}
+@media (min-width: 320px) and (max-width: 800px) {
+  .inscri_volunteer .volunteer_container {
+    flex-direction: column;
+  }
+}
+
+.inscri_volunteer .volunteer_container .img img {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  .inscri_volunteer .volunteer_container .img img {
+    width: 100%;
+    height: 200px;
+  }
+}
+.inscri_volunteer .volunteer_container .input {
+  flex-wrap: wrap;
+}
+.inscri_volunteer .volunteer_container .input input {
+  height: 55px;
+  width: 300px;
+  font-size: 15px;
+  border-radius: 5px;
+  outline: none;
+  background: var(--Main-BackColor);
+  padding-left: 15px;
+  border: none;
+  color: var(--white-color);
+  box-shadow: #19f6cd 0 0 4px 2px;
+  transition: var(--Main-transition);
+}
+.inscri_volunteer .volunteer_container .input input:focus {
+background-color: #eee;
+color: black;
+}
+@media (min-width: 320px) and (max-width: 850px) {
+  .inscri_volunteer .volunteer_container .input input {
+    width: 80% !important;
+  }
+}
+
+.inscri_volunteer .volunteer_container .input input[type="file"]::before {
+  content: "Upload Your CV";
+  position: absolute;
+  top: 20px;
+  font-size: 15px;
+  color: var(--section-color);
+}
+.inscri_volunteer .volunteer_container .input input[type="file"]::after {
+  content: "\f0ee";
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  right: 20px;
+  top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.3;
+  animation: opacity 1s linear infinite alternate;
+}
+@keyframes opacity {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+::-webkit-file-upload-button {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.inscri_volunteer .volunteer_container .input textarea {
+    width: 80%;
+    height: 200px;
+    resize: none;
+    padding: 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    outline: none;
+}
+.inscri_volunteer .volunteer_container .input button {
+    padding: 25px;
+    background: var(--Second-Mian-color);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
